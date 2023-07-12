@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+/*!* You can add global styles to this file, and also import other style files *!*/
+
+/*html, body { height: 100%; }*/
+/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/
+
+/* src/styles.css */
+
+/* Define a font for the whole application */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style all anchor tags */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Style all buttons to make them look cool */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+/* Use CSS Grid for a modern layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Use CSS variables for easier theme management */
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #6c757d;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

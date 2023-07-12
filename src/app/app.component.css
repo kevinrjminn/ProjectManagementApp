@@ -1,0 +1,37 @@
+/* app.component.css */
+
+body {
+  background-color: #F2F2F2;
+  font-family: Arial, sans-serif;
+  color: #4F4F4F;
+}
+
+/* Navigation links styling */
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  display: inline-block; /* inline-block will allow side by side links */
+  border-radius: 5px;
+  background-color: #FFF;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  color: #FFF;
+  background-color: #007BFF;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
+}
+
+/* Use :visited to change the color of visited links */
+a:visited {
+  color: #6c757d;
+}
+
+/* Layout for the router outlet */
+router-outlet {
+  margin: 20px;
+}

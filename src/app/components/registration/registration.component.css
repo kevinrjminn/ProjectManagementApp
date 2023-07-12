@@ -1,0 +1,41 @@
+/* registration.component.css */
+
+/* Style the form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Style the input fields */
+form input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+form button {
+  width: 100%;
+  background-color: var(--primary-color); /* Use the CSS variable we defined earlier */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--secondary-color); /* Use the CSS variable we defined earlier */
+}
+
+/* Display validation error messages */
+form .error-message {
+  color: red;
+  margin-bottom: 10px;
+}
